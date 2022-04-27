@@ -1,746 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- https://blackrockdigital.github.io/startbootstrap-freelancer/ -->
+  <!-- Head -->
+  <head>
 
-<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-227235287-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
+      gtag('config', 'UA-227235287-1');
+    </script>
+
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>eXPaNd</title>
+    <title>EXPAND - Ad-Hoc Parallel File System</title>
 
-    <!-- CSS -->
-    <link href="bootstrap.min.css"  rel="stylesheet">
-    <link href="freelancer.min.css" rel="stylesheet">
+    <!-- Required stylesheets -->
+    <link type="text/css" rel="stylesheet" href="external/bootstrap_vue/bootstrap.min.css"/>
+    <link type="text/css" rel="stylesheet" href="external/bootstrap_vue/bootstrap-largegrid.min.css"/>
+    <link type="text/css" rel="stylesheet" href="external/bootstrap_vue/bootstrap-vue.min.css"/>
+    <link type="text/css" rel='stylesheet' href="external/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Required scripts -->
+    <script src="external/bootstrap_vue/polyfill.min.js"></script>
+    <script src="external/bootstrap_vue/vue.min.js"></script>
+    <script src="external/bootstrap_vue/bootstrap-vue.min.js"></script>
+    <script src="external/jquery.min.js"></script>
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="external/swiper/swiper-bundle.css"/>
+    <link rel="stylesheet" href="external/swiper/swiper-bundle.min.css"/>
+    <script src="external/swiper/swiper-bundle.js"></script>
+    <script src="external/swiper/swiper-bundle.min.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicon-16x16.png">
+    <link rel="manifest" href="./images/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
-    <!-- JavaScript -->
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="freelancer.min.js"></script>
+  </head>
 
-</head>
+  <!-- Body -->
+  <body>
+    <div id="app">
+      <template>
 
-<body id="page-top" class="index">
+        <!-- Navbar  -->
+        <header>
+          <navbar-xpn></navbar-xpn>
+        </header>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top"><center>Homepage<br><img height=55 src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/axpn.gif"></center></a>
+
+        <div class="contenedor row" style="margin-top: 10vh; text-align: center; margin-bottom: 7vh">
+          <div class="col-lg-12 col-sm-12 row p-0 m-0">
+            <div class="col-lg-2 col-sm-1 p-0"></div>
+
+            <div class="col-lg-8 col-sm-10">
+              
+
+
+              <!-- Introduction section -->
+              <div class="col-lg-12 col-sm-12 row m-0" id=introduction>
+                <div class="col-lg-9 col-sm-9 p-0">
+                  <h4><b>The EXPAND Ad-Hoc Parallel File System </b></h4>
+                </div>
+                <div class="col-lg-1 col-sm-1"></div>
+                <div class="col-lg-2 col-sm-2 p-0">
+                  <b-button class="btn btn-block" size="sm" variant="primary" href="https://github.com/xpn-arcos/xpn">EXPAND Repository</b-button>
+                </div>
+              </div>
+
+              <highlights :highlights="highlights"></highlights>
+
+
+
+              <!-- Description section -->
+              <div class="col-lg-12 col-sm-12" style="margin-top: 4%; text-align: center;" id="description">
+                <h4><b>Description</b></h4>
+                <hr>
+                <br>
+
+                <div class="col-lg-12 col-sm-12" style="text-align: left;">
+
+                  <h5><b>Design summary</b></h5>
+
+                  <p align="justify">Expand is a parallel file system based on standard servers. This section describes the work developed to convert Expand into an ad-hoc parallel file system.</p>
+
+                  <p align="justify">The next figure shows the structure of Expand as an ad-hoc parallel file system. This structure is based on a series of data servers running on the compute nodes that communicate with each other using MPI. The use  of MPI facilitates the standardization of Expand and its use in HCP environments.</p>
+
+                  <b-img center class="m-4" src="images/description/xpn-1.png" fluid alt="The Expand Ad hoc architecture"></b-img>
+
+                  <p align="justify">Parallel data partitions are created on the ad-hoc servers on the local storage devices (HDD or SSD) using the services provided by the local operating system. The applications are deployed on the compute nodes and communicate with the Expand servers also using MPI. As can be seen in the figure, applications can be deployed on nodes without ad-hoc servers and servers can be deployed on nodes where no applications are running.</p>
+
+                  <p align="justify">The next figure shows the internal details of the Expand as ad-hoc parallel file system. Next section describes some aspects of Expand design.</p>
+
+                  <b-img center class="m-4" src="images/description/xpn-2.png" fluid alt="The Expand Ad hoc detailed architecture"></b-img>
+
+
+
+                  <h5><b>Data distribution and files</b></h5>
+
+                  <p align="justify">Expand combines several  Expand MPI ad-hoc servers (see the previous figure) in order to provide a generic parallel partition. Each server provide one or more directories that are combined to build a distributed partition to use in compute nodes. All files in the system are striped across all ad-hoc servers to facilitate parallel access, with each server storing conceptually a subfile of the parallel file.</p>
+
+                  <p align="justify">A file consists in several subfiles, one for each ad-hoc server. All subfiles are fully transparent to the Expand users. On a parallel partition, the user can create stripped files with cyclic layout. In these files, blocks are distributed across the partition following a round-robin pattern. This structure is shown in the next figure.  In this figure the user data file is the file stored in Expand and the block size is the used in Expand for distributed the blocks among all servers. This block size is independent of the structure used in the backend parallel file system.</p>
+
+                  <b-img center class="m-4" src="images/description/xpn-3.png" fluid alt="The file structure and directory mapping in Expand"></b-img>
+
+
+                  <h5><b>Naming and metadata management</b></h5>
+
+                  <p align="justify">Partitions in Expand are defined using a small configuration file. For example, the following configuration file defines a partition with two ad-hoc servers and an block size of 512 KB. For each server, a directory must be specified. All files will be storage in this directory.</p>
+
+                  <!--conf.xml-->
+                  <ul>
+                    <b-media tag="li" class="mb-2">                        
+                      <b-card-group deck>
+                         <b-card>
+                          <b-row no-gutters>
+                            <b-col md="12">
+                               <b-card-text style="text-align: left;margin:2%;">
+                                <code>&lt;?xml version="1.0" encoding="ISO-8859-1"?&gt;</code>
+                                <br>
+                                <code>&lt;xpn_conf&gt;</code>
+                                <br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;partition name="xpn" type="NORMAL" bsize="512k"  &gt;</code>
+                                <br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;data_node id="&lt;node ID&gt;" url="mpiServer://&lt;server name or IP&gt;/&lt;storage path1&gt;"&gt;</code>
+                                <br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;data_node id="&lt;node ID&gt;" url="mpiServer://&lt;server name or IP&gt;/&lt;storage path1&gt;"&gt;</code>
+                                <br>
+                                <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/partition&gt;</code>
+                                <br>
+                                <code>&lt;/xpn_conf&gt;</code>
+                               </b-card-text>
+                            </b-col>
+                          </b-row>
+                         </b-card>
+                      </b-card-group>
+                    </b-media>
+                  </ul>
+
+                  <p align="justify">Each subfile of a Expand file (see the previous figure) has a small header at the beginning of the subfile. This header stores the file’s metadata. This metadata includes the following information: stride size, base node, that identifies the ad-hoc server where the first block of the file resides and the file distribution pattern used. By the moment, we only use files with cyclic layout.</p>
+
+                  <p align="justify">All subfiles have a header for metadata, although only one node, called master node (described below) stores the current metadata. The master node can be different from the base node. To simplify the naming process and reduce potential bottlenecks, Expand does not use any metadata manager. The previous figure shows how directory mapping is made in Expand.</p>
+
+                  <p align="justify">The metadata of a file resides in the header of a subfile stored in an ad-hoc server. This server is the master node of the file.  To obtain this node the file name is hashed into the number of node.</p>
+
+                  <p align="justify">Because the determination of the master node is based on the file name, when a user renames a file, the master node for that file changes. The algorithm used in Expand to rename a file is as follows:</p>
+
+                  <!--Rename pseudocode-->
+                  <div class="m-4" style="color:black">
+                    <code style="color:black">rename(oldname, newname) {</code>
+                    <br>
+                    <code style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;oldmaster = hash(oldname)</code>
+                    <br>
+                    <code style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;newmaster = hash(newname)</code>
+                    <br>
+                    <code style="color:black">&nbsp;&nbsp;&nbsp;&nbsp;move the metadata from oldmaster to newmaster</code>
+                    <br>
+                    <code style="color:black">}</code>
+                  </div>
+
+
+                  <h5><b>Parallel Access</b></h5>
+
+                  <p align="justify">All file operations in Expand use a virtual filehandle. This virtual filehandle is the reference used in Expand to reference all operations. When Expand needs to access to a subfile, it uses the appropriated filehandle. To enhance I/O, user requests are split by the Expand library into parallel subrequests sent to the involved servers. When a request involves k ad-hoc servers, Expand issues k requests in parallel to the servers, using threads to parallelize the operations. The same criteria is used in all Expand operations. A parallel operation to k servers is divided in k individual operations that are provided by ad-hoc servers.</p>
+
+
+                  <h5><b>Data stage-in/stage-out operations</b></h5>
+
+                  <p align="justify">Data stage-in operations are perfomed in parallel from the backend parallel file system to the ad-hoc servers  without the intervention of any client application. Each server builds the corresponding subfile in its local storage space, reading the data from the file stored on the backend file system. This operation is performed in parallel in all ad-hoc servers.</p>
+
+                  <p align="justify">In the same way, data stage-out are performed in parallel. Each server writes the blocks stored in his local subfile to the final file of the backend parallel file system.</p>
+
+                  <p align="justify">Although these operations could be performed using a normal POSIX application, we have developed two new system calls that allow these operations to be performed directly from the servers with improved performance. This system calls are:</p>
+
+                  <ul class="ml-4">
+                    <li align="justify">Preload. Copy a file from the backend file system to the Expand partition.</li>
+
+                    <li align="justify">Flush. Write a file from the Expand partition to the final backend file system.</li>
+                  </ul> 
+
+                </div>
+
+                <div class="col-lg-4 col-sm-4 p-0"> </div>
+              </div>
+
+
+
+              <!-- User Guide section -->
+              <div class="col-lg-12 col-sm-12" style="margin-top: 4%; text-align: center;" id="user_guide">
+                <h4><b>User Guide</b></h4>
+                <hr>
+                <br>
+
+                <b-card-group deck style="margin: 7%; text-align: center;">
+                  <card-help v-for="option in user_guide" 
+                             :option="option">
+                  </card-help>
+                </b-card-group>
+
+                <div class="col-lg-4 col-sm-4 p-0"> </div>
+              </div>
+
+
+
+              <!-- Publications section -->
+              <div class="col-lg-12 col-sm-12" style="margin-top: 4%; text-align: center;" id="publications">
+                <h4><b>Publications</b></h4>
+                <hr>
+
+                <b-card-group deck style="margin: 7%; text-align: center;">
+                  <publication  v-for="publication in publications"
+                                :publication="publication">
+                  </publication>
+                </b-card-group>
+
+              </div>
+
+
+
+              <!-- Updates section -->
+              <div class="col-lg-12 col-sm-12" style="margin-top: 4%; text-align: center;" id="updates">
+                <h4><b>Updates</b></h4>
+                <hr>
+
+                <p align="justify">The following list includes the updates and progress for ad-hoc Expand version</p>
+
+                <ul class="ml-4">
+                  <li align="justify">New version of the system call interception library.</li>
+
+                  <li align="justify">New ad-hoc Expand server developed.</li>
+
+                  <li align="justify">New ad-hoc Expand client developed.</li>
+
+                  <li align="justify">New installation manual.</li>
+                </ul> 
+
+              </div>
+
+
+
+              <!-- Authors section -->
+              <div class="col-lg-12 col-sm-12" style="margin-top: 4%; text-align: center;" id="authors">
+                <h4><b>Authors</b></h4>
+                <hr>
+
+                <uielto-about></uielto-about>
+
+              </div>
+
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden"><a href="#page-top"></a></li>
-                    <li class="page-scroll"><a href="#description">Description</a></li>
-                    <li class="page-scroll"><a href="#getxpn">Getting eXPaNd</a></li>
-                    <li class="page-scroll"><a href="#publications">Publications</a></li>
-                    <li class="page-scroll"><a href="#authors">Authors</a></li>
-                </ul>
-            </div>
+            <div class="col-lg-2 col-sm-1 p-0"></div>
+          </div>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-			    <li data-target="#myCarousel" style="background-color: black;" data-slide-to="0" class="active"></li>
-			    <li data-target="#myCarousel" style="background-color: black;" data-slide-to="1"></li>
-			    <li data-target="#myCarousel" style="background-color: black;" data-slide-to="2"></li>
-			    <li data-target="#myCarousel" style="background-color: black;" data-slide-to="3"></li>
-			  </ol>
-
-			  <div class="carousel-inner" role="listbox">
-			    <div class="item active">
-				<img class="img-responsive"
-				     src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/xpn-info-1.png"
-				     style="height:45vh !important;"
-				     alt="mimpi screenshot 1">
-			    </div>
-			    <div class="item">
-				<img class="img-responsive"
-				     src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/xpn-info-2.png"
-				     style="height:45vh !important;"
-				     alt="mimpi screenshot 2">
-			    </div>
-			    <div class="item">
-				<img class="img-responsive"
-				     src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/xpn-info-3.png"
-				     style="height:45vh !important;"
-				     alt="mimpi screenshot 3">
-			    </div>
-			    <div class="item">
-				<img class="img-responsive"
-				     src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/xpn-info-4.png"
-				     style="height:45vh !important;"
-				     alt="mimpi screenshot 4">
-			    </div>
-			  </div>
-
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                            <i class="fa fa-arrow-left" aria-hidden="true">Previous</i>
-			    <span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                            <i class="fa fa-arrow-right" aria-hidden="true">Next</i>
-			    <span class="sr-only">Next</span>
-			  </a>
-			</div>
-
-                        <div class="intro-text">
-                            <span class="name">eXPaNd</span>
-                            <hr class="star-light">
-                            <span class="skills">The Expand Parallel File System</span>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- "description" Section -->
-    <section id="description">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Description</h2><hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12 col-lg-12">
-                    <p>
-                    </p>
-
-<p>
-<title>Architecture</title>
-<style>
-<!--
-a            { margin-bottom: 10 }
--->
-</style>
-</p><p><font color="#000080" size="5"><b>Motivation</b></font></p>
-<p align="left">The main motivation of Expand is to build a parallel file system for heterogeneous general purpose distributed
-environments. To satisfy this goal, we use Network File System (NFS).<br>
-<br>
-NFS&nbsp; supports the NFS protocol, a set of remote procedure call (RPC) that provides the
-means for clients to perform operations on a remote file server. NFS protocol is operating system
-independent. Developed originally
-for being used in networks of UNIX systems, it is widely available today in many
-systems, as LINUX or Windows 2000, two operating systems very frequently used in clusters.<br>
-<br>
-Figure 1 shows the architecture of Expand. This architecture shows how multiple NFS servers can be used as a
-single file system. File data are declustered by Expand among all NFS servers, using blocks of different sizes as stripping
-unit.
-Processes in clients use an Expand library to access an Expand distributed
-partition.</p>
-<p align="center"><br>
-<br>
-<img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/arq.png" width="603" height="480"></p>
-<p align="left">&nbsp;</p>
-<p align="center"><b>Fig 1. Architecture of Expand</b></p>
-<p align="left"><br>
-
-<br>
-Using the former approach offers the following advantages:</p>
-<ol>
-  <li>
-    <p align="left">No changes to the NFS server are required to run Expand. All aspects of Expand
-    operations are implemented on the clients. In this way, we can use several servers with different operating system to build a
-    distributed partition. Furthermore, declustered partitions can coexist with NFS traditional partitions without
-    problems.</p></li>
-  <li>
-    <p align="left">Expand is independent  of the operating system used in the
-    client. All
-    operations are implemented using RPC and NFS protocol. Expand is available
-    for Linux and Windows plataforms. Furthermore, we&nbsp; provide an universal
-    Java client.</p></li>
-  <li>
-
-    <p align="left">The parallel file system construction is greatly simplified,
-    because all operations are implemented on the clients. This approach is completely
-    different to that used in many current parallel file system, that implement both client and server
-    sides.</p></li>
-  <li>
-    <p align="left">It allows parallel access to both data of different files and data
-    of the same file, reducing the bottleneck that represents the traditional distributed file
-    systems.</p></li>
-  <li>
-    <p align="left">It allows the using of servers with different architectures and
-    operating systems, because the NFS protocol hides those differences. Because of
-    this feature, Expand is very suitable for heterogenous systems, as cluster of
-    workstations.</p></li>
-  <li>
-    <p align="left">NFS servers use caching, increasing int this way the
-    performance.</p></li>
-
-  <li>
-    <p align="left">It simplifies the configuration, because NFS is very
-    familiar to users. Server only
-    need to export the appropriate directories and clients only need a little configuration file that explain the distributed
-    partition.<br>
-    <br>
-  </p></li>
-</ol>
-<p><font color="#000080" size="5"><b>Design</b></font></p>
-<p>Expand provides high performance I/O exploiting parallel accesses to files
-stripped among several NFS servers. Expand is designed as a client-server system
-with multiple NFS servers, with each Expand file striped across some of the NFS
-servers. All operations in Expand clients are based on RPCs and NFS protocol.
-The first prototype of Expand is a user-level implementation, through a library
-that must be linked with the applications. Expand provides a global name space
-in all cluster.<br>
-<br>
-Next sections describe data distribution, file structure, naming, metadata
-management, and parallel access to files in Expand.<br>
-
-<br>
-<font color="#000080" size="4"><b>Data Distribution</b></font><br>
-<br>
-To provide large storage capacity and to enhance flexibility, Expand combines
-several NFS servers to provide a generic stripped partition which allows to
-create several types of file systems on any kind of parallel I/O system.<br>
-<br>
-Each server exports one o more directories that are combined to build a
-distributed partition. All files in the system are declustered across all NFS
-servers to facilitate parallel access, with each server storing conceptually a
-subfile of the parallel file.<br>
-<br>
-A design goal, no implemented in the current prototype, is to allow that a
-partition in Expand can be expanded adding more servers to an existing
-distributed partition.This feature increases the scalability of the system and
-it also allows to increase the size of partitions. When new servers are added to
-an existent partition, the partition must be rebuilt to accommodate all files.
-Conceptually, this rebuilding will be made using the following idea:<br>
-<br>
-<font face="Courier New">&nbsp;&nbsp;&nbsp; rebuild_partition(old_partition,
-new_partition) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for each file in
-old_partition&nbsp;&nbsp;&nbsp; {<br>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; copy the file
-into the new partition<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unlink the
-file in old_partition<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
-&nbsp;&nbsp;&nbsp; }</font><br>
-<br>
-<br>
-In this algorithm, when a file is copied into the new partition, the new file is
-declusterd across all NFS server of the new partition. To implement this
-expansion, algorithms must be designed to allow a redistribution of data without
-integrally copying files.<br>
-<br>
-
-<font color="#000080" size="4"><b>The Structure of Expand Files</b></font></p>
-<p>A file in Expand consists in several subfiles, one for each NFS partition.
-All subfiles are fully transparent to the Expand users. Expand hides this
-subfiles, offering to the clients a traditional view of the files. This idea is
-similar to the used in <a href="http://parlweb.parl.clemson.edu/pvfs/" target="_blank">PVFS</a>.<br>
-<br>
-On a distributed partition, the user can create in the current prototype&nbsp; stripped files with cyclic layout. In these files, blocks are distributed across
-the partition following a round-robin pattern. This structure is shown in Figure
-2. Each subfile of a Expand file as a small header at the beginning of the
-subfile. This header stores the file's metadata. This metadata includes the
-following information:&nbsp;</p>
-<ul>
-  <li>Stride size. Each file can use a different stride size. This parameter can
-    be configured in open operation.</li>
-  <li>Kind of file: cyclic, RAID4, or RAID5. This parameter also can be
-    specified in the open operation.</li>
-
-  <li>Base node. This parameter identifies the NFS server where the first block
-    of the file resides.</li>
-  <li>Distribution pattern. All files in Expand are striped across all NFS
-    servers. In the current prototype, we only use a round-robin pattern. In the
-    future, this field will store the order used to decluster the file across
-    the servers.</li>
-</ul>
-<p>All subfiles has a header for metadata, although only one node, called&nbsp;
-master node (described below) stores the current metadata. The master node can
-be different from the base node.<br>
-</p>
-<p align="center"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/files.png" width="546" height="514"></p>
-<p align="center"><b>Fig2. Expand file with cyclic layout</b></p>
-<p><br>
-<font color="#000080" size="4"><b>Naming and metadata management</b></font><br>
-
-<br>
-To simplify the naming process and reduce potential bottlenecks, Expand does not use any metadata manager, as the used in PVFS
-. Figure 3 shows how directory mapping is made in Expand. The Expand tree directory is replicated in all NFS
-servers. In this way, we can use the lookup operation of NFS without any change to access to all subfiles of a file. This
-feature also allows  access to fault tolerance files when a server node fails.<br>
-<br>
-<br>
-</p>
-<p align="center"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/dir.png" width="761" height="305"><br>
-<br>
-<b>Fig3. Directory Mapping</b></p>
-<p align="left">The metadata of a file resides in the header of a subfile stored
-in a NFS server. This NFS server is the&nbsp; master node of the file, similar to the
-mechanism used in the Vesta Parallel File System. To obtain the master node of a file, the
-file name is hashed into the number of node:<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hash(namefile) =&nbsp; NFS serverI<br>
-
-<br>
-<br>
-The use of this simple approach offers a good distribution of masters.
-Initially the base node for a file agrees with the master node. The use of this simple scheme allows to distribute the master
-nodes and the blocks between all NFS servers, balancing the use of all NFS servers
-and, hence, the I/O load.<br>
-<br>
-Because the determination of the master node is based on the file name, when a user renames a file, the master node for this file is
-changed. The algorithm used in Expand to rename a file is the following:<br>
-<br>
-<font face="Courier New">rename(oldname, newname) {<br>
-&nbsp;&nbsp;&nbsp; oldmaster = hash(oldname)<br>
-&nbsp;&nbsp;&nbsp; newmaster = hash(newname)<br>
-&nbsp;&nbsp;&nbsp; move the metadata from oldmaster to newmaster<br>
-
-    }</font><br>
-<br>
-This process is shown in Figure 4. Moving the metadata is&nbsp;&nbsp; the only operation needed to maintain the coherence of the base
-node system for all the Expand files.</p>
-<p align="left">&nbsp;</p>
-<p align="center"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/rename.png" width="759" height="283"></p>
-<p align="left">&nbsp;</p>
-<p align="center"><b>Fig 4. Renaming a file</b></p>
-<p align="left"><font color="#000080" size="4"><b>Parallel access</b></font><br>
-<br>
-NFS clients use filehandle to access the files. A NFS filehandle is an opaque reference to a file or directory that is
-independent of the filenane. All NFS operations use a filehandle to identify the file or directory which the operation applies
-to. Only the server can interpret the data contained within the filehandle. Expand
-uses a virtual filehandle, that is defined as the union of all filehandleI, where
-filehandleI&nbsp; is the filehandle used for the NFS server I to reference the subfile
-I belonging to the Expand file. The
-virtual filehandle is the reference used in Expand to reference all operations. When Expand needs to access to a
-subfile, it uses
-the appropriated filehandle. Because filehandles are opaque to clients, Expand can use different
-NFS implementations for the same distributed partition.<br>
-
-<br>
-To enhance I/O, user requests are split by the Expand library into parallel subrequests sent to the involved NFS
-servers. When a
-request involves <i>k</i>&nbsp; NFS servers, Expand issues k requests in parallel to the NFS
-servers, using threads to parallelize the operations. The same criteria is used in all Expand
-operations. A parallel operation to <i>k</i> servers is divided in <i>k</i>
-individual
-operations that use RPC and the NFS protocol to access the corresponding
-subfile.<br>
-</p>
-<p align="left"><font color="#000080" size="4"><b>User Interface</b></font><br>
-<br>
-Expand offers two different interfaces. The first interface is based on POSIX system
-call. This interface, however, is not
-appropriate for parallel applications using strided patterns with small access size. Parallel applications can also used Expand with
-MPI-IO. Expand have been
-integrated inside <a href="http://www-unix.mcs.anl.gov/romio" target="_top">ROMIO</a>&nbsp;
-
-and can be used with <a href="http://www-unix.mcs.anl.gov/mpi/mpich/" target="_top"> MPICH</a>
-(see Figure 5). Portability in ROMIO is achieved using an&nbsp; abstract-device interface for
-IO (ADIO).</p>
-<p align="center"><br>
-<br>
-<img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/mpiio.png" width="550" height="380"><br>
-<br>
-<br>
-<b>
-Fig 5. Expand inside ROMIO</b></p>
-<p align="left">&nbsp;</p>
-
-<p align="left"><a href="http://www-unix.mcs.anl.gov/~thakur/adio/" target="_top">ADIO</a>&nbsp;
-is a mechanism specifically designed for implementing parallel-I/O APIs portably on multiple file
-systems. ADIO consists of a small set of basic functions for parallel I/O. The ROMIO implementation of
-MPI-IO use the ADIO to achieve portability. The ADIO interface implemented for
-Expand includes:&nbsp;<br>
-</p>
-<ul>
-  <li>
-    <p align="left">Open a file. All opens are considered to be collective
-    operations.</p></li>
-  <li>
-    <p align="left">Close a file. Close operation is also a collective
-    operation.</p></li>
-  <li>
-
-    <p align="left">Contiguous reads and writes. ADIO provides separate soutines
-    for contiguous and noncontiguous access.</p></li>
-  <li>
-    <p align="left">Noncontiguous reads and writes. Parallel applications often need to read or write data that is located in a noncontiguous
-    fashion in files and even in memory. ADIO provides routines for specifying noncontiguous accesses with a single
-    call.&nbsp;</p></li>
-  <li>
-    <p align="left">Nonblocking reads and writes}. ADIO  provides nonblocking versions of all read and write
-    calls.&nbsp;</p></li>
-  <li>
-    <p align="left">Collective reads and writes. A collective routine must be called by all processes in the group that opened the file.</p></li>
-
-  <li>
-    <p align="left">Seek. This function can be used to change the position of the individual file
-    pointer.</p></li>
-  <li>
-    <p align="left">Test and wait. These operations are used ti test the completion of nonblocking
-    operations.</p></li>
-  <li>
-    <p align="left">File Control. This operation is used to set or get information about an open file.</p></li>
-  <li>
-
-    <p align="left">Miscellaneous. Other operations included in ADIO provides routines for deleting files, resizing files, flushing
-    cached data to disks, and initializing and terminating ADIO.</p></li>
-</ul>
-<p align="left"><b><font color="#000080" size="5">Configuration</font></b></p><p align="left">To&nbsp;
-configure Expand, the user must to specify in a configuration file the Expand
-partition.&nbsp; An example of configuration file is the following:</p><p align="left"><font face="Courier New">/xpn1
-&nbsp;&nbsp;&nbsp;&nbsp;
-8&nbsp;&nbsp;&nbsp; 4<br>
-server1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /export/home1<br>
-
-server2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /export/home2<br>
-server3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /export/home3<br>
-server4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /home<br>
-<br>
-/xpn2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp; 2<br>
-
-server1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /users<br>
-server3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /export/home/users</font></p><p align="left">This
-file defines two expand partition. The first partition uses 4 servers (server1,
-server2, server3, and server4) and it uses by default a stripping unit of 8 KB.
-The second partition uses 2 servers and it uses a stripping unit of 4 KB. The
-path <font face="Courier New">/xpn1 </font>is the root path for the first
-partition, and <font face="Courier New">/xpn2</font> is the root path for
-the second partition. So, the expand file <font face="Courier New">/xpn1/dir/data.txt
-</font>is mapped in the following subflies:
-</p><ul>
-  <li>
-
-    <p align="left"><font face="Courier New">/export/home1/dir/data.txt</font>
-    in <font face="Courier New">server1</font></p></li>
-  <li>
-    <p align="left"><font face="Courier New">/export/home2/dir/data.txt </font>in
-    <font face="Courier New">server2</font></p></li>
-  <li>
-    <p align="left"><font face="Courier New">/export/home3/dir/data.txt </font>in
-    <font face="Courier New">server3</font></p></li>
-
-  <li>
-    <p align="left"><font face="Courier New">/home/dir/data.txt </font>in <font face="Courier New">server4</font></p></li>
-</ul>
-<p align="left"><font size="5" color="#000080"><b>Evaluation</b></font></p>
-<p align="left">In this section we show the results obtained in Expand with MPI-IO
-using two workloads:</p>
-<ul>
-  <li>
-    <p align="left">Strided accesses.</p></li>
-
-  <li>
-    <p align="left">An out-core matrix multiplication.</p></li>
-</ul>
-<p align="left">In the strided access tests, multiple noncontiguous regions of the
-data file were simultaneously accessed by each process. We used a<br>
-file of 100 MB and different access size (from 128 bytes to 4MB).<br>
-<br>
-The out-of-core matrix multiplication assumes a NxN matrix. This implementation doesn't do anything fancy with memory management
-and simply assumes that each processor can hold 3N elements (each element is the type
-double) in core at one time: 2N elements for
-matrices A and B, and N elements for matrix C. The multiplication process is shown
-in Figure 6. <a href="algorithm.html" target="_self">This is the algorithm</a> using
-MPI-IO. All matrix are stored in disks is row order.</p>
-<p align="left">&nbsp;</p>
-
-<p align="center"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/matrix.png" width="747" height="255"><br>
-<b>
-Fig 6. Matrix Multiplication</b></p>
-<p align="left"><br>
-<br>
-<br>
-The platform used in the evaluation was a  cluster with 8 Pentium III
-biprocessors, each one with 1GB of main memory, connected
-through a Fast Ethernet, and executing Linux operating system (kernel 2.4.5).  All experiments have been executed on Expand
-(XPN
-in figures) and PVFS using MPI-IO as interface. For both parallel file system, we have used 8
-I/O servers. The&nbsp; block size used in all files, both in Expand as PVFS
-tests, has been 8 KB. All clients have been executed in the 8 machines, i.e:
-all machines in the cluster have been used as server and clients.<br>
-<br>
-The results for strided accesses are shown in Figure 7. Graphics show the aggregated bandwidth obtained for
-write operations and read operations for 4, 8, and 16 processes and different access
-size.&nbsp;</p>
-<table border="1" width="100%">
-  <tbody><tr>
-
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/4p-r.png" width="320" height="240"></td>
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/4p-w.png" width="320" height="240"></td>
-  </tr>
-  <tr>
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/8p-r.png" width="320" height="240"></td>
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/8p-w.png" width="320" height="240"></td>
-  </tr>
-  <tr>
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/16p-r.png" width="320" height="240"></td>
-
-    <td width="50%"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/16p-w.png" width="320" height="240"></td>
-  </tr>
-</tbody></table>
-<p align="center"><b>Fig 7. Results for strided access</b></p>
-<p align="left">Figure 8 shows the performance obtained in the out-of-core matrix multiplication. These figures shown the time in
-seconds needed to multiply matrix of different sizes using several processes (4, 8, 16 and 32 processes). In general, the performance
-obtained in Expand scale better with the number of processes. As we can see in the figures, the time needed is increased
-considerably when N increase, because all matrix are stored in row order. The algorithm
-used read, however, the Matrix B in column order. This provokes many internal seek operations to read the whole
-matrix. </p>
-
-<table border="1" width="100%" height="318">
-  <tbody><tr>
-    <td width="50%" height="164"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/m50-r.png" width="320" height="240"></td>
-    <td width="50%" height="164"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/m100-r.png" width="320" height="240"></td>
-  </tr>
-
-  <tr>
-    <td width="50%" height="142"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/m200-r.png" width="320" height="240"></td>
-    <td width="50%" height="142"><img border="0" src="https://raw.githubusercontent.com/arcos-xpn/arcos-xpn.github.io/master/info/m500-r.png" width="320" height="240"></td>
-  </tr>
-</tbody></table>
-<p align="center"><b>Fig 8. Results for out-of-core matrix multiplication</b></p>
-<p align="left">&nbsp;</p>
-<p align="left">&nbsp;</p>
-<p align="left">&nbsp;</p>
-<p align="left">&nbsp;</p>
-<p></p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- "getmimpi" Section -->
-    <section id="getmimpi">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Get eXPaNd</h2><hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-		  <div class="col-sm-6 col-md-4 col-lg-4">&nbsp;</div>
-		  <div class="col-sm-6 col-md-4 col-lg-4">
-		    <div class="thumbnail">
-		      <img style="height:18vh" src="https://github.githubassets.com/images/modules/logos_page/Octocat.png" alt="github logo">
-		      <div class="caption">
-			<h3>GitHub Repository:</h3>
-			<p><a href="https://github.com/arcos-xpn/xpn">https://github.com/arcos-xpn/xpn</a></p>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="col-sm-6 col-md-4 col-lg-4">&nbsp;</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- "publications" Section -->
-    <section id="publications">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Publications</h2><hr class="star-primary">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
-
-                <p><title>Articles related with Expand</title><b><font color="#000080" size="5">Articles related with Expand</font></b></p>
-
-<ul>
-  <li>
-    J. Pérez, F.  García, J. Carretero, A. Calderón. L. Sánchez. <br>
-    "Data Allocation and Load Balancing for Heterogeneous Cluster Storage Systems". <br>
-    Proceedings of the Third IEEE/ACM International Symposium on Cluster Computing and the Grid. 12-15 May 2003. Tokyo, Japan
-  </li>
-  <li>
-    F. García, A. Calderón, J. Carretero, J.M. Pérez, J. Fernández. <br>
-    "The Design of the Expand Parallel File System", <br>
-    International Journal of High Performance Computing Applications. Vol 17, N. 1. Spring 2003
-  </li>
-  <li>
-    J. M. Pérez, F. Garcia, J. Carretero, A. Calderón, J. Fernández. <br>
-    "<a href="http://grid.cesga.es/eabstracts/xpn-data-grid.pdf">A Parallel I/O Middleware to Integrate Heterogeneous Storage Resources on Grids</a>" <br>
-    1st European Across Grids Conference. February, 13th-14th, 2003. Universidad de Santiago de Compostela, Spain&nbsp;
-  </li>
-  <li>
-    F. García, A.  Calderón, J. Carretero, J.M. Pérez, J. Fernández. <br>
-    "A Parallel and Fault Tolerant File System Based on NFS Server". <br>
-    11-th Euromicro Conference on Parallel Distributed and Network based Processing Genoa - Italy PDP2003February, 5-7, 2003
-  </li>
-  <li>
-    A. Calderón, F. García, J. Carretero, J.M. Pérez, J. Fernández.  <br>
-    "An Implementation of MPI-IO on Expand: A Parallel File System Based on NFS Servers",<br>
-    9th PVM/MPI European UserÂ´s Group.   Johannes Kepler University Linz, Austria. 29/sep&nbsp; â€“ 2/oct. 2002.
-  </li>
-  <li>
-    F. García, A. Calderón, J. Carretero, J. Fernández, J. M. Pérez. <br>
-    "Parallel File System Based on NFS Servers for Heterogeneous Clusters"<br>
-    3rd ACIS International Conference on Software Engineering, Artificial Intelligence Networking and Parallel/Distributed Computing, SNPDâ€™02. 26-28 junio 2002. Madrid. EspaÃ±a.
-  </li>
-  <li>
-    F. García, A. Calderón, J. Carretero, J. Fernández, J. M. Pérez. <br>
-    "An Expandable Parallel File System Using NFS servers", <br>
-    VECPAR 2002, 5th International Meeting on High Performance Computing for Computational Science. 26-28 junio 2002. Oporto, Portugal.
-  </li>
-  <li>
-    A. Caderón, F. García, J. Carretero, J.M. Pérez, J. Fernández. <br>
-    "Un sistema de ficheros paralelo y tolerante a fallos basado en servidores NFS." <br>
-    Pp: 305-310. XIII Jornadas de Paralelismo. Lleida 9-11 de septiembre de 2002.  ISBN: 84-8409-159-7
-  </li>
-  <li>
-    F. García, A. Calderón, J. Carretero, J. Fernández, J.M. Pérez. <br>
-    "A New Approach to the Construction of Parallel File Systems for Clusters",
-    International Conference on Advances in Infrastructure for Electronic Business, Education Science, Medicine, and Mobile Technologies on the Internet (SSGRR 2002s).  Lâ€™ Aquila, Italia. 29 de julio 4 de agosto 2002.
-  </li>
-  <li>
-    F. García, A. Calderón, M.S. Pérez, L.M. Sánchez. <br>
-    "Evaluating Expand: A Parallel File System Using NFS Servers"<br>
-    Proceedings of the 6th World Multiconference on Systemics, Cybernetics and Informatics. Julio 14-18, 2002. Orlando, Florida, EEUU. Pp. 80-85.  ISBN: 980-07-8150-1
-  </li>
-</ul>
-
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
-
-<p style="margin-bottom: 15"><font size="5" color="#000080"><b>Other articles using Expand</b></font></p>
-<ul>
-  <li>
-    M. S. Pérez, J. Carretero, F. García, J. M. Peña, and Víctor Robles. <br>
-    "<a href="http://grid.cesga.es/eabstracts/mapfs_mperez.pdf">MAPFS: A Flexible Infrastructure for Data-IntensiveGrid Applications</a>". <br>
-    1st European Across Grids Conference.  February, 13th-14th, 2003. Universidad de Santiago de Compostela, Spain
-  </li>
-  <li>
-    M. Pérez, R. Pons, F. García, J. Carretero and M. Córdoba. <br>
-    "An optimization of Apriori algorithm through the usage of parallel I/O and hints" <br>
-    The Third International Conference on Rough Sets  and Current Trends in Computing. October 14-16, 2002 . Penn State Great Valley. Malvern, EEUU.
-  </li>
-  <li>
-    M. S. Pérez, F. García, J. Carretero. <br>
-    "A proposal for I/O access profiles in parallel datamining algorithms" <br>
-    3rd ACIS International Conference on Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing, SNPD'02. 26-28 junio 2002. Madrid. EspaÃ±a.
-  </li>
-  <li>
-    M. S. Pérez, F. García, J. Carretero. <br>
-    "MAPFS_MAS: A Model of Interaction Among Information Retrieval Agents" <br>
-    IEEE/ACM International Symposium on Cluster Computing on the Grid. CCGrid2002. 21-24 mayo 2002. Munich, Alemania.
-  </li>
-</ul>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- "authors" Section -->
-    <section id="authors">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Authors</h2><hr class="star-primary">
-                </div>
-            </div>
-            <p>&nbsp;</p>
-	    <div class="row">
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="https://www.arcos.inf.uc3m.es/wp-content/uploads/2017/03/jcarretero.png" 
-                           class="img-responsive img-rounded" alt="thumbnail image of jesus carretero" width="150"><br>
-		      <div class="text-center"><p><a href="http://www.inf.uc3m.es/component/comprofiler/userprofile/jcarrete">Jesús Carretero Pérez</a></p></div>
-                      </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="https://www.arcos.inf.uc3m.es/wp-content/uploads/2016/05/lmsan-1.jpg"
-                           class="img-responsive img-rounded" alt="thumbnail image of luis miguel sanchez garcia" height="150"><br>
-		      <div class="text-center"><p><a href="https://es.linkedin.com/in/lmsan">Luis Miguel Sánchez García</a></p></div>
-                      </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="http://163.117.148.20/wp-content/uploads/2016/05/fgarcia-1-150x150.jpg" 
-                           class="img-responsive img-rounded" alt="thumbnail image of felix garcia carballeira" width="150" ><br>
-		      <div class="text-center"><p><a href="http://www.inf.uc3m.es/component/comprofiler/userprofile/fgcarbal">Félix García Carballeira</a></p></div>
-                      </div>
-                </div>
-	    </div>
-	    <div class="row">
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="http://163.117.148.20/wp-content/uploads/2016/05/bbergua-1-150x150.jpg"
-                           class="img-responsive img-rounded" alt="thumbnail image of borja bergua guerra" width="150" ><br>
-		      <div class="text-center"><p><a href="http://163.117.148.20/peopledirectory/">Borja Bergua Guerra</a></p></div>
-                      </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="http://163.117.148.20/wp-content/uploads/2016/05/acaldero-1-150x150.jpg" 
-                           class="img-responsive img-rounded" alt="thumbnail image of alejandro calderon mateos" width="150" ><br>
-		      <div class="text-center"><p><a href="http://www.inf.uc3m.es/component/comprofiler/userprofile/acaldero">Alejandro Calderón Mateos</a></p></div>
-                      </div>
-                </div>
-                <div class="col-sm-4 col-md-4">
-                      <div class="thumbnail">
-                      <img src="http://163.117.148.20/wp-content/uploads/2016/05/jfernand-1-150x150.jpg" 
-                           class="img-responsive img-rounded" alt="thumbnail image of javier fernandez muñoz" width="150" ><br>
-		      <div class="text-center"><p><a href="http://www.inf.uc3m.es/component/comprofiler/userprofile/jfmunoz">Javier Fernández Muñoz</a></p></div>
-                      </div>
-                </div>
-	    </div>
-        </div>
-    </section>
-
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
+      </template>
     </div>
 
-
-    <!-- Footer -->
-    <footer class="text-center">
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        eXPaNd distributed as <a href="http://www.gnu.org/licenses/">GPL 3.0</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-</body>
-
+    <!-- Required scripts -->
+    <script>
+      document.write("<script src=\"js/min.xpn_web.js?id=" + new Date().getTime() + "\"><\/script>");
+    </script>
+  </body>
 </html>
-

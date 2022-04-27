@@ -1,0 +1,39 @@
+[
+  {
+    "title": "The design of the Expand parallel file system",
+    "year": "2003",
+    "type": "Journal Paper",
+    "publisher": "The International Journal of High Performance Computing Applications",
+    "authors": [
+      "Felix Garcia-Carballeira",
+      "Alejandro Calderon",
+      "Jesus Carretero",
+      "Javier Fernandez",
+      "Jose M Perez"
+    ],
+    "media_src": "",
+    "media_alt": "",
+    "doi": "https://doi.org/10.1177/1094342003017001003",
+    "cite": "@article{garcia2003design,title={The design of the Expand parallel file system},author={Garcia-Carballeira, F{\\'e}lix and Calderon, Alejandro and Carretero, Jesus and Fernandez, Javier and Perez, Jose M},journal={The International Journal of High Performance Computing Applications},volume={17},number={1},pages={21--37},year={2003},publisher={Sage Publications}}",
+    "id": "pub-1"
+  },
+  {
+    "title": "An implementation of MPI-IO on Expand: A parallel file system based on NFS servers",
+    "year": "2002",
+    "type": "Conference Paper",
+    "publisher": "In European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting",
+    "authors": [
+      "Alejandro Calderon",
+      "Felix Garcia-Carballeira",
+      "Jesus Carretero",
+      "Jose M Perez",
+      "Javier Fernandez"
+    ],
+    "media_src": "",
+    "media_alt": "",
+    "doi": "https://doi.org/10.1007/3-540-45825-5_47",
+    "cite": "@inproceedings{calderon2002implementation,title={An implementation of MPI-IO on Expand: A parallel file system based on NFS servers},author={Calder{\\'o}n, Alejandro and Garc{\\'\\i}a, F{\\'e}lix and Carretero, Jes{\\'u}s and P{\\'e}rez, Jose M and Fern{\\'a}ndez, Javier},booktitle={European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting},pages={306--313},year={2002},organization={Springer}}",
+    "id": "pub-2"
+  }
+
+]

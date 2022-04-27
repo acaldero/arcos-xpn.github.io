@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Instalation",
+    "img": "images/instalation.png",
+    "img_alt": "instalation",
+    "text": "",
+    "url": "instalation.html"
+  },
+  {
+    "title": "Running",
+    "img": "images/running.jpg",
+    "img_alt": "running",
+    "text": "",
+    "url": "running.html"
+  },
+  {
+    "title": "FAQ",
+    "img": "images/faq.png",
+    "img_alt": "faq",
+    "text": "",
+    "url": "faq.html"
+  }
+]
