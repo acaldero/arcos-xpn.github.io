@@ -1,20 +1,20 @@
 [
   {
-    "title": "Instalation",
+    "title": "Instalation guide",
     "img": "images/instalation.png",
-    "img_alt": "instalation",
+    "img_alt": "instalation guide",
     "text": "",
     "url": "instalation.html"
   },
   {
-    "title": "Running",
+    "title": "Execution guide",
     "img": "images/running.jpg",
-    "img_alt": "running",
+    "img_alt": "execution guide",
     "text": "",
     "url": "running.html"
   },
   {
-    "title": "FAQ",
+    "title": "F.A.Q.",
     "img": "images/faq.png",
     "img_alt": "faq",
     "text": "",

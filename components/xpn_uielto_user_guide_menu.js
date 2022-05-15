@@ -31,14 +31,14 @@ var uielto_help_card = {
                   '   :img-src="option.img"' +
                   '   :img-alt="option.img_alt"' +
                   '   img-top' +
-                  '   style="max-width: 15rem;"' +
+                  '   style="max-width: 20rem;"' +
                   '   class="mb-2"' +
                   ' >' +
                   '   <b-card-text>' +
                   '     {{option.text}}' +
                   '   </b-card-text>' +
                   ' ' +
-                  '   <b-button :href="option.url" variant="info">' +
+                  '   <b-button :href="option.url" variant="info" block>' +
                   '     <span class="fas fa-external-link-alt"></span> Open' +
                   '   </b-button>' +
                   ' </b-card>'
