@@ -61,7 +61,7 @@ var uielto_publication = {
                   '   class="mb-2"' +
                   ' >' +
                   '   <b-card-text>' +
-                  '     {{publication.year}}' +
+                  '     <b>{{publication.publisher}}</b>' +
                   '     <br>' +
                   '     <br>' +
                   '   </b-card-text>' +
@@ -72,7 +72,7 @@ var uielto_publication = {
                   '       <b-card>' +
                   '         <b>{{publication.type}}</b>' +
                   '         <br>' +
-                  '         <b>{{publication.publisher}}</b>' +
+                  '         {{publication.year}}' +
                   '         <br>' +
                   '         <br>' +
                   '         <u>Authors</u>' +
