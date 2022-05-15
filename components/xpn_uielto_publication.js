@@ -57,7 +57,6 @@ var uielto_publication = {
                   '   :img-src="publication.media_src"' +
                   '   :img-alt="publication.media_alt" img-height="35%"' +
                   '   img-top' +
-                  '   style="max-width: 20rem;"' +
                   '   class="mb-2"' +
                   ' >' +
                   '   <b-card-text>' +
@@ -67,7 +66,7 @@ var uielto_publication = {
                   '   </b-card-text>' +
                   '' +
                   '   <template #footer>' +
-                  '     <b-button v-b-toggle="publication.id" variant="info" class="btn btn-block mb-1" style="text-align: center;"><span class="fas fa-arrow-circle-down"></span> More information</b-button>' +
+                  '     <b-button v-b-toggle="publication.id" variant="secondary" class="btn btn-block mb-1" style="text-align: center;"><span class="fas fa-arrow-circle-down"></span> More information</b-button>' +
                   '     <b-collapse :id="publication.id" style="text-align: center; margin:2%;">' +
                   '       <b-card>' +
                   '         <b>{{publication.type}}</b>' +
@@ -84,11 +83,11 @@ var uielto_publication = {
                   '       </b-card>' +
                   '     </b-collapse>' +
                   '' +
-                  '     <b-button :href="publication.doi" target="_blank" variant="info">' +
+                  '     <b-button :href="publication.doi" class="mx-1" target="_blank" variant="info">' +
                   '       <span class="fas fa-external-link-alt"></span> Open' +
                   '     </b-button>' +
-                  '     <b-button variant="info" @click="copy_clipboard(publication.cite)">' +
-                  '       <span class="fas fa-copy"></span> Cite' +
+                  '     <b-button class="mx-1" variant="info" @click="copy_clipboard(publication.cite)">' +
+                  '       <span class="fas fa-copy"></span> Cite 2 clipboard' +
                   '     </b-button>' +
                   '   </template>' +
                   ' ' +
