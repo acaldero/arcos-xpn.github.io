@@ -26,7 +26,7 @@ var uielto_highlights= {
                     highlights:        { type: Array,  required: true }
                   },
 
-      template:   ' <div class="col-xl-5 col-lg-6 col-md-8 col-sm-12 mx-auto" style="margin-top:2%;">' +
+      template:   ' <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 mx-auto" style="margin-top:2%;">' +
                   '   <b-carousel ' +
 	          '      id="carousel"' +
 	          '      :interval="5000"' +
