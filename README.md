@@ -1,2 +1,2 @@
 # Expand - Ad-Hoc Parallel File System (Web)
-https://xpn-arcos.github.io/arcos-xpn.github.io/
+https://xpn-arcos.github.io/
