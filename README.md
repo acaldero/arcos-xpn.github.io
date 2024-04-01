@@ -104,7 +104,7 @@ The typical executions has 3 main steps:
    ```bash
    ./xpn -v -n <number of processes> -l <full path to the hostfile>  start
    ```
-2. Then, launch the program that will use Expand (XPN client):
+2. Then, launch the program that will use Expand (XPN client): <br/>
    2.1. Example for the *app1* MPI application:
    ```bash
    mpiexec -np <number of processes> \
@@ -136,7 +136,7 @@ The typical executions has 3 main steps:
 ### F.A.Q.
 
 * Q: Where is the source code of Expand?
-* A: https://github.com/xpn-arcos/xpn <br/><br/>
+* A: <a href="https://github.com/xpn-arcos/xpn">https://github.com/xpn-arcos/xpn</a> <br/><br/>
 * Q: under what license is it released?
 * A: [GPLv3.0](https://github.com/acaldero/uc3m_sd/blob/main/LICENSE)
 
@@ -146,15 +146,15 @@ The typical executions has 3 main steps:
 ## Publications 
 
 * **The design of the Expand parallel file system** <a href="https://doi.org/10.1177/1094342003017001003">DOI</a> <br/>
-  Journal Paper: The International Journal of High Performance Computing Applications 2003, <br/>
+  The International Journal of High Performance Computing Applications 2003, <br/>
   Authors: Felix Garcia-Carballeira, Alejandro Calderon-Mateos, Jesus Carretero, Javier Fernandez, Jose M Perez
 
 * **An implementation of MPI-IO on Expand: A parallel file system based on NFS servers** <a href="https://doi.org/10.1007/3-540-45825-5_47">DOI</a> <br/>
-  Conference Paper: In European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting 2002,  <br/>
+  In European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting 2002,  <br/>
   Authors: Alejandro Calderon-Mateos, Felix Garcia-Carballeira, Jesus Carretero, Jose M Perez, Javier Fernandez
 
 * **Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand** <a href="https://doi.org/10.5281/zenodo.6862882">DOI</a> <br/>
-  Conference paper: Jornadas Sarteco 2022, <br/>
+  Jornadas Sarteco 2022, <br/>
   Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez
 
 
