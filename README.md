@@ -105,7 +105,7 @@ The typical executions has 3 main steps:
    ./xpn -v -n <number of processes> -l <full path to the hostfile>  start
    ```
 2. Then, launch the program that will use Expand (XPN client):
-  2.1. Example for the *app1* MPI application:
+   2.1. Example for the *app1* MPI application:
    ```bash
    mpiexec -np <number of processes> \
            -hostfile <full path to the hostfile> \
@@ -133,7 +133,7 @@ The typical executions has 3 main steps:
    ```
 
 
-###F.A.Q.
+### F.A.Q.
 
 * Q: Where is the source code of Expand?
 * A: https://github.com/xpn-arcos/xpn <br/><br/>
