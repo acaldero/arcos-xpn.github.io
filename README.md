@@ -104,11 +104,14 @@ Although these operations could be performed using a normal POSIX application, w
 
 The typical executions has 3 main steps:
 1. First, launch the Expand MPI server (xpn_mpi_server):
+
    ```bash
    ./xpn -v -n <number of processes> -l <full path to the hostfile>  start
    ```
+
 2. Then,  launch the program that will use Expand (XPN client).
    2.1. Example for the *app1* MPI application:
+
    ```bash
    mpiexec -np <number of processes> \
            -hostfile <full path to the hostfile> \
@@ -118,27 +121,34 @@ The typical executions has 3 main steps:
            -genv LD_PRELOAD      <INSTALL_PATH>/xpn/lib/xpn_bypass.so:$LD_PRELOAD \
            <full path to app1>/app1
    ```
+
    2.2. Example for the *app2* program (a NON-MPI application):
+
    ```bash
    export XPN_DNS=<full path to the nameserver file>
    export XPN_CONF=<full path to the XPN configuration file>
    LD_PRELOAD=<INSTALL_PATH>/xpn/lib/xpn_bypass.so <full path to app2>/app2
    ```
+
    2.3. Example for the *app3* Python program:
+
    ```bash
    export XPN_DNS=<full path to the nameserver file>
    export XPN_CONF=<full path to the XPN configuration file>
    LD_PRELOAD=<INSTALL_PATH>/xpn/lib/xpn_bypass.so python3 <full path to app3>/app3
    ```
+
 4. At the end of your working session, you need to stop the MPI server (xpn_mpi_server):
+
    ```bash
    ./xpn -v -l <full path to the hostfile>  stop
    ```
+
 </details>
 
 
-<details open>
-<summary><h3>F.A.Q.</h3></summary>
+<details>
+<summary><h3>F.A.Q. (click to show/hide...)</h3></summary>
 
 * Q: Where is the source code of Expand?
 * A: https://github.com/xpn-arcos/xpn <br/><br/>
