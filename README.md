@@ -4,7 +4,7 @@
 ## Contents
 
  * [Description](#description)
- * [User Guide](#user_guide)
+ * [User Guide](#user-guide)
  * [Publications](#publications)
  * [Updates](#updates)
  * [Authors](#authors)
@@ -16,13 +16,17 @@ Expand is a parallel file system based on standard servers. This section describ
 
 The next figure shows the structure of Expand as an ad-hoc parallel file system. This structure is based on a series of data servers running on the compute nodes that communicate with each other using MPI. The use of MPI facilitates the standardization of Expand and its use in HCP environments.
 
+<p align="center">
 <img src="https://xpn-arcos.github.io/images/description/xpn-1.png">
+</p>
 
 Parallel data partitions are created on the ad-hoc servers on the local storage devices (HDD or SSD) using the services provided by the local operating system. The applications are deployed on the compute nodes and communicate with the Expand servers also using MPI. As can be seen in the figure, applications can be deployed on nodes without ad-hoc servers and servers can be deployed on nodes where no applications are running.
 
 The next figure shows the internal details of the Expand as ad-hoc parallel file system. Next section describes some aspects of Expand design.
 
+<p align="center">
 <img src="https://xpn-arcos.github.io/images/description/xpn-2.png">
+</p>
 
 
 ### Data distribution and files
@@ -31,7 +35,9 @@ Expand combines several Expand MPI ad-hoc servers (see the previous figure) in o
 
 A file consists in several subfiles, one for each ad-hoc server. All subfiles are fully transparent to the Expand users. On a parallel partition, the user can create stripped files with cyclic layout. In these files, blocks are distributed across the partition following a round-robin pattern. This structure is shown in the next figure. In this figure the user data file is the file stored in Expand and the block size is the used in Expand for distributed the blocks among all servers. This block size is independent of the structure used in the backend parallel file system.
 
+<p align="center">
 <img src="https://xpn-arcos.github.io/images/description/xpn-3.png">
+</p>
 
 
 ### Naming and metadata management
@@ -84,8 +90,9 @@ Although these operations could be performed using a normal POSIX application, w
 
 ## User Guide
 
-<details>
-<summary><h2>Instalation guide</h2></summary>
+<ul>
+<details open>
+<summary><h3>Instalation guide</h3></summary>
 
   ```mermaid
   %% {init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -156,8 +163,8 @@ Although these operations could be performed using a normal POSIX application, w
 </details>
 
 
-<details>
-<summary><h2>Execution guide</h2></summary>
+<details open>
+<summary><h3>Execution guide</h3></summary>
 
 The typical executions has 3 main steps:
 1. First, launch the Expand MPI server (xpn_mpi_server):
@@ -195,35 +202,32 @@ The typical executions has 3 main steps:
 </details>
 
 
-<details>
-<summary><h2>F.A.Q.</h2></summary>
+<details open>
+<summary><h3>F.A.Q.</h3></summary>
 
 * Q: Where is the source code of Expand?
 * A: https://github.com/xpn-arcos/xpn <br/><br/>
 * Q: under what license is it released?
 * A: [GPLv3.0](https://github.com/acaldero/uc3m_sd/blob/main/LICENSE)
 </details>
+</ul>
 
 
 
 ## Publications 
 
-* **The design of the Expand parallel file system**,
-   The International Journal of High Performance Computing Applications,
-   Journal Paper, 2003,
-   Authors: Felix Garcia-Carballeira, Alejandro Calderon-Mateos, Jesus Carretero, Javier Fernandez, Jose M Perez,
-   <a href="https://doi.org/10.1177/1094342003017001003">DOI</a>
+* **The design of the Expand parallel file system** <a href="https://doi.org/10.1177/1094342003017001003">DOI</a> <br/>
+  Journal Paper: The International Journal of High Performance Computing Applications 2003, <br/>
+  Authors: Felix Garcia-Carballeira, Alejandro Calderon-Mateos, Jesus Carretero, Javier Fernandez, Jose M Perez
 
-* **An implementation of MPI-IO on Expand: A parallel file system based on NFS servers**,
-   In European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting
-   Conference Paper, 2002,
-   Authors: Alejandro Calderon-Mateos, Felix Garcia-Carballeira, Jesus Carretero, Jose M Perez, Javier Fernandez,
-   <a href="https://doi.org/10.1007/3-540-45825-5_47">DOI</a> 
+* **An implementation of MPI-IO on Expand: A parallel file system based on NFS servers** <a href="https://doi.org/10.1007/3-540-45825-5_47">DOI</a> <br/>
+  Conference Paper: In European Parallel Virtual Machine/Message Passing Interface Users’ Group Meeting 2002,  <br/>
+  Authors: Alejandro Calderon-Mateos, Felix Garcia-Carballeira, Jesus Carretero, Jose M Perez, Javier Fernandez
 
-* **Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand**,
-   Jornadas Sarteco, Conference paper, 2022,
-   Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez,
-   <a href="https://doi.org/10.5281/zenodo.6862882">DOI</a> 
+* **Sistema de almacenamiento Ad-Hoc para entornos HPC basado en el sistema de ficheros paralelo Expand** <a href="https://doi.org/10.5281/zenodo.6862882">DOI</a> <br/>
+  Conference paper: Jornadas Sarteco 2022, <br/>
+  Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez
+
 
 
 ## Updates
