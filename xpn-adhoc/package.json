@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "colors": "^1.4.0",
-    "jshint": "^2.13.4",
-    "readline-sync": "^1.4.10",
-    "terser": "^5.13.1",
-    "yargs": "^17.5.1"
-  }
-}
