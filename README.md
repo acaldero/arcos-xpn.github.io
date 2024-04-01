@@ -90,76 +90,12 @@ Although these operations could be performed using a normal POSIX application, w
 
 ## User Guide
 
-<ul>
 <details open>
 <summary><h3>Instalation guide</h3></summary>
 
-  ```mermaid
-  %% {init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-  flowchart TD
-    A([Start]) --> B("Do you have 'Spack'?")
-    B -- Yes --> ide11
-    B -- No --> Y1("Do you have 'modules'?")
-
-    %% (1) with spack
-    subgraph ide1 [1 With spack]
-    subgraph ide11 [1.1 Add repo]
-       direction TB
-       X1["git clone https://github.com/xpn-arcos/xpn.git 
-          spack repo add xpn/scripts/spack"]
-    end
-    subgraph ide12 [1.2 Install software]
-       direction TB
-       X2["spack <b>info</b> xpn
-          spack <b>install</b> xpn"]
-    end
-    subgraph ide13 [1.3 Load software]
-       direction TB
-       X3["spack <b>load</b> xpn"]
-    end
-    classDef lt text-align:left,fill:lightgreen,color:black; 
-    class X1,X2,X3 lt;
-    ide11 --> ide12
-    ide12 --> ide13
-    end
-    ide13 --> I([End])
-
-    Y1-- Yes --> ide21a
-    Y1-- No ---> ide21b
-    subgraph ide2 [2 With autotools]
-    subgraph ide21a [2.1 Install prerequisites]
-       direction TB
-       Y1A["module avail <br> module load gcc<br> module load 'impi/2017.4'"]
-    end
-    subgraph ide21b [2.1 Install prerequisites]
-       direction TB
-       Y1B["sudo apt-get install -y build-essential gcc make libtool<br>sudo apt-get install -y autoconf automake git<br> sudo apt-get install -y libmpich-dev mpich mpich-doc"]
-    end
-    subgraph ide22 [2.2 Download source code]
-       direction TB
-       Y2B["mkdir $HOME/src 
-            cd    $HOME/src 
-            git clone https://github.com/michaelrsweet/mxml.git
-            git clone https://github.com/xpn-arcos/xpn.git"]
-    end
-    subgraph ide23 ["2.3 build source code"]
-       direction LR
-       Y3B["export XPN_MPICC='full path to the mpicc compiler to be used' 
-            cd $HOME/src 
-            ./xpn/build-me -m $XPN_MPICC -i $HOME/bin"]
-    end
-    ide21a --> ide22
-    ide21b --> ide22
-    ide22 --> ide23
-
-    classDef lt2 text-align:left,fill:lightblue,color:black;
-    class Y1A,Y1B lt2;
-    classDef lt3 text-align:left;
-    class Y2B,Y3B lt3;
-    end
-
-    Y3B --> I([End])
-  ```
+<p align="center">
+<img src="https://xpn-arcos.github.io/images/description/xpn-deploy-230.png">
+</p>
 </details>
 
 
@@ -210,7 +146,6 @@ The typical executions has 3 main steps:
 * Q: under what license is it released?
 * A: [GPLv3.0](https://github.com/acaldero/uc3m_sd/blob/main/LICENSE)
 </details>
-</ul>
 
 
 
@@ -245,12 +180,12 @@ The following list includes the updates and progress for ad-hoc Expand version:
 <html>
 <table>
 <tr>
-<td><img src="https://xpn-arcos.github.io/images/author_fgarcia.png"></td>
-<td><img src="https://xpn-arcos.github.io/images/author_acaldero.png"></td>
-<td><img src="https://xpn-arcos.github.io/images/author_dcamarmas.png"></td>
-<td><img src="https://xpn-arcos.github.io/images/author_lmsanchez.png"></td>
-<td><img src="https://xpn-arcos.github.io/images/author_bbergua.jpg"></td>
-<td><img src="https://xpn-arcos.github.io/images/author_jcarretero.png"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_fgarcia.png"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_acaldero.png"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_dcamarmas.png"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_lmsanchez.png"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_bbergua.jpg"></td>
+<td><img src="https://xpn-arcos.github.io/images/authors/author_jcarretero.png"></td>
 </tr>
 <tr>
 <td>Félix García Carballeira</td>
