@@ -157,6 +157,14 @@ The typical executions has 3 main steps:
   Jornadas Sarteco 2022, <br/>
   Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez
 
+* **A new Ad-Hoc parallel file system for HPC environments based on the Expand parallel file system** <a href="https://doi.org/10.1109/ISPDC59212.2023.00015">DOI</a> <br/>
+  Conference: 2023 22nd International Symposium on Parallel and Distributed Computing (ISPDC), <br/>
+  Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez
+
+* **Evaluación de rendimiento del sistema de ficheros paralelo Expand Ad-Hoc en MareNostrum 4** <a href="https://doi.org/10.5281/zenodo.8378956">DOI</a> <br/>
+  Jornadas Sarteco 2023, <br/>
+  Authors: Diego Camarmas-Alonso, Félix García-Carballeira, Alejandro Calderón-Mateos, Jesús Carretero Pérez
+
 
 
 ## Updates
