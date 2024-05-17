@@ -102,17 +102,17 @@ Although these operations could be performed using a normal POSIX application, w
 The typical executions has 3 main steps:
 1. First, launch the Expand MPI server (xpn_mpi_server):
    ```bash
-   ./xpn -v -n <number of processes> -l <full path to the hostfile>  start
+   ./xpn -v -n <number of processes> -l <full path to the hostfile> -w <shared directory among hostfile computers, $HOME for example> -x <local directory on each node to be used, /tmp for example> start
    ```
 2. Then, launch the program that will use Expand (XPN client): <br/>
    2.1. Example for the *app1* MPI application:
    ```bash
    mpiexec -np <number of processes> \
            -hostfile <full path to the hostfile> \
-           -genv XPN_DNS  <nameserver file> \
-           -genv XPN_CONF <XPN configuration file> \
-           -genv LD_LIBRARY_PATH <INSTALL_PATH>/mxml/lib:$LD_LIBRARY_PATH \
-           -genv LD_PRELOAD      <INSTALL_PATH>/xpn/lib/xpn_bypass.so:$LD_PRELOAD \
+           -genv XPN_DNS          <nameserver file> \
+           -genv XPN_CONF         <XPN configuration file> \
+           -genv LD_LIBRARY_PATH  <INSTALL_PATH>/mxml/lib:$LD_LIBRARY_PATH \
+           -genv LD_PRELOAD       <INSTALL_PATH>/xpn/lib/xpn_bypass.so:$LD_PRELOAD \
            <full path to app1>/app1
    ```
    2.2. Example for the *app2* program (a NON-MPI application):
